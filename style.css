@@ -80,14 +80,27 @@ a:hover {
 #hero h1 {
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* 稍微减小底部间距 */
     line-height: 1.2;
 }
 
+/* 新增：描述小字的样式 */
+.hero-subtitle {
+    font-size: 22px;       /* 设置小字的字体大小 */
+    font-weight: 400;      /* 字重正常 */
+    color: #e0e0e0;        /* 颜色设置为浅灰色，比白色稍暗 */
+    margin-bottom: 30px;   /* 与下方日期保持间距 */
+    max-width: 800px;      /* 限制最大宽度，防止太长 */
+    margin-left: auto;     /* 居中显示 */
+    margin-right: auto;    /* 居中显示 */
+}
+
+/* 修改：增大了日期和地点的字体 */
 #hero h2 {
-    font-size: 20px;
-    margin-bottom: 40px;
-    color: #eee;
+    font-size: 32px;       /* 原来是 20px，现在增大到 32px */
+    font-weight: 600;      /* 稍微加粗一点 */
+    margin-bottom: 15px;   /* 调整间距 */
+    color: #fff;           /* 确保是纯白色 */
 }
 
 /* Old btn-get-started removed, using btn-nav-register style instead */
