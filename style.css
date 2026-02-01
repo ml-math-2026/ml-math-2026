@@ -23,17 +23,13 @@ a:hover {
     z-index: 997;
 }
 
-.navbar-brand {
-    font-weight: 700;
-    color: #012970;
-    font-size: 24px;
-    text-decoration: none;
-}
+/* Navbar Brand style removed */
 
 .navbar-nav .nav-link {
-    color: #012970;
+    color: #555555; /* Slightly darker text for links */
     font-weight: 600;
-    margin-left: 15px;
+    margin-left: 10px; /* Adjusted spacing */
+    margin-right: 10px;
     font-size: 16px;
     font-family: "Nunito", sans-serif;
     transition: 0.3s;
@@ -41,8 +37,30 @@ a:hover {
 
 .navbar-nav .nav-link:hover, 
 .navbar-nav .nav-link.active {
-    color: #4154f1;
+    color: #e65c00; /* Orange hover color */
 }
+
+/* New Orange Registration Button in Nav */
+.btn-nav-register {
+    background-color: #e65c00; /* Target orange color */
+    color: #ffffff !important; /* Force white text */
+    border-radius: 30px; /* Rounded corners */
+    padding: 8px 25px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    transition: 0.3s;
+    white-space: nowrap; /* Prevent breaking into two lines */
+    display: inline-block;
+    border: none;
+}
+
+.btn-nav-register:hover {
+    background-color: #cc5200; /* Slightly darker orange on hover */
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(230, 92, 0, 0.3);
+}
+
 
 /* Hero Section */
 #hero {
@@ -72,25 +90,8 @@ a:hover {
     color: #eee;
 }
 
-.btn-get-started {
-    font-family: "Nunito", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 40px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #fff;
-    background: #4154f1;
-    box-shadow: 0 5px 30px rgba(65, 84, 241, 0.4);
-}
+/* Old btn-get-started removed, using btn-nav-register style instead */
 
-.btn-get-started:hover {
-    background: #5969f3;
-    color: #fff;
-    transform: translateY(-2px);
-}
 
 /* Sections Common */
 section {
