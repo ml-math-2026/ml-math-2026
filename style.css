@@ -1,0 +1,204 @@
+/* General Styling */
+body {
+    font-family: "Open Sans", system-ui, -apple-system, sans-serif;
+    color: #444444;
+}
+
+a {
+    text-decoration: none;
+    color: #4154f1;
+}
+
+a:hover {
+    color: #717ff5;
+    text-decoration: none;
+}
+
+/* Header & Navigation */
+#header {
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #012970;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link {
+    color: #012970;
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: #4154f1;
+}
+
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 85vh;
+    /* Using a placeholder image for background */
+    background: linear-gradient(rgba(1, 4, 136, 0.7), rgba(1, 4, 136, 0.7)), url('https://placehold.co/1920x1080?text=Conference+Venue') center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+#hero h2 {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #eee;
+}
+
+.btn-get-started {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.btn-get-started:hover {
+    background: #5969f3;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Sections Common */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f6f9ff;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: #4154f1;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.section-title p {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #012970;
+}
+
+/* Speaker Cards */
+.speaker-card {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 30px 20px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+    border-radius: 8px;
+    background: #fff;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 30px rgba(1, 41, 112, 0.15);
+}
+
+.speaker-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.speaker-name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #012970;
+}
+
+.speaker-affil {
+    font-size: 15px;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Schedule Table */
+.schedule-table thead th {
+    background-color: #012970;
+    color: #fff;
+    border-color: #012970;
+}
+
+.schedule-table td, .schedule-table th {
+    vertical-align: middle;
+    padding: 15px;
+}
+
+/* Footer */
+#footer {
+    background: #f6f9ff;
+    padding: 30px 0;
+    color: #444444;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid #e1ecff;
+}
+
+#footer h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #012970;
+    margin-bottom: 10px;
+}
+
+.credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #012970;
+}
