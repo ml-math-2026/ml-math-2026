@@ -97,7 +97,7 @@ a:hover {
 
 /* 修改：增大了日期和地点的字体 */
 #hero h2 {
-    font-size: 24px;       /* 原来是 20px，现在增大到 32px */
+    font-size: 20px;       /* 原来是 20px，现在增大到 32px */
     font-weight: 600;      /* 稍微加粗一点 */
     margin-bottom: 15px;   /* 调整间距 */
     color: #fff;           /* 确保是纯白色 */
