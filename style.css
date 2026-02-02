@@ -156,15 +156,15 @@ section {
 
 /* 列表项具体样式 */
 .about-list li {
-    margin-bottom: 6px;   /* 列表项之间的间距 */
+    margin-bottom: 8px;   /* 列表项之间的间距 */
     padding-left: 0px;     /* 文字和圆点距离 */
 }
 
 /* 专门控制圆点的大小 */
 .about-list li::marker {
-    font-size: 36px;       /* 圆点大小 */
+    font-size: 20px;       /* 圆点大小 */
     color: #555555;        /* 圆点颜色与文字一致 */
-    line-height: 0.1;
+    line-height: 0.5;
 }
 
 
