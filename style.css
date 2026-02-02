@@ -148,23 +148,35 @@ section {
     line-height: 1.4;      /* 行间距 */
 }
 
-/* 列表容器样式 */
 .about-list {
-    margin-top: 25px;      /* 增加上方间距 */
-    padding-left: 20px;
+    list-style: none; /* 移除默认的黑点 */
+    padding-left: 0;  /* 移除默认缩进 */
+    margin-top: 25px;
 }
 
-/* 列表项具体样式 */
+/* 列表项样式 */
 .about-list li {
-    margin-bottom: 8px;   /* 列表项之间的间距 */
-    padding-left: 0px;     /* 文字和圆点距离 */
+    display: flex;             /* 启用弹性布局，让圆点和文字并排 */
+    align-items: flex-start;   /* 顶部对齐（防止多行文字时圆点跑偏） */
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 12px;
 }
 
-/* 专门控制圆点的大小 */
-.about-list li::marker {
-    font-size: 20px;       /* 圆点大小 */
-    color: #555555;        /* 圆点颜色与文字一致 */
-    line-height: 0.5;
+/* 自定义圆点 (使用 ::before) */
+.about-list li::before {
+    content: "●";              /* 手动添加圆点符号 */
+    font-size: 28px;           /* 圆点大小 */
+    color: #555555;
+    margin-right: 15px;        /* 圆点和文字的距离 */
+    line-height: 1;            /* 防止圆点自身撑开高度 */
+    
+    /* 核心修改：通过 translateY 上下微调圆点位置 */
+    /* 正数向下移，负数向上移 */
+    transform: translateY(1px); 
 }
 
 
