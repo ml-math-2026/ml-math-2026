@@ -140,7 +140,7 @@ section {
     margin: 15px 0 15px 0; /* 稍微增加一点下边距，防止跟内容太挤 */
     
     /* 核心修改：调大字体 */
-    font-size: 36px;       /* 从 32px 增大到 42px */
+    font-size: 32px;       /* 从 32px 增大到 42px */
     
     font-weight: 700;      /* 保持加粗 */
     color: #444444;        /* 保持深灰色/黑色 */
