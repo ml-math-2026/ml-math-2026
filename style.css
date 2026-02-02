@@ -169,7 +169,7 @@ section {
 /* 自定义圆点 (使用 ::before) */
 .about-list li::before {
     content: "●";              /* 手动添加圆点符号 */
-    font-size: 16px;           /* 圆点大小 */
+    font-size: 15px;           /* 圆点大小 */
     color: #555555;
     margin-right: 15px;        /* 圆点和文字的距离 */
     line-height: 1;            /* 防止圆点自身撑开高度 */
