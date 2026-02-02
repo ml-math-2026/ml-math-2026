@@ -391,6 +391,56 @@ section {
     }
 }
 
+/* --- Registration Section Styling --- */
+
+/* 1. 注册列表样式 */
+.reg-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.reg-list li {
+    margin-bottom: 5px;
+    color: #444;
+}
+
+/* 2. "Registration closed" 大字样式 */
+.reg-closed-status {
+    font-size: 28px;
+    font-weight: 400;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* 3. 橙色链接样式 (用于邮箱) */
+.orange-link {
+    color: #e65c00 !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.orange-link:hover {
+    color: #d35400 !important;
+    text-decoration: underline;
+}
+
+/* 4. 折叠菜单触发器样式 */
+.reg-info-toggle {
+    color: #e65c00;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.reg-info-toggle:hover {
+    color: #d35400;
+}
+
+.reg-info-toggle i {
+    font-size: 14px;
+    margin-top: 2px;
+}
 
 /* Footer */
 #footer {
