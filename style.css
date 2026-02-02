@@ -217,7 +217,28 @@ section {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.speaker-name {
+.speaker-name, 
+.speaker-name a {
+    color: #e65c00;        /* 图片中的橙色 */
+    font-weight: 400;      /* 去掉加粗，改用标准粗细，更像图片风格 */
+    text-decoration: none;
+    font-size: 22px;       /* 稍微调大一点字号 */
+}
+
+/* 名字悬停效果 */
+.speaker-name a:hover {
+    color: #d35400;        /* 鼠标放上去变深一点 */
+}
+
+.speaker-affil {
+    color: #6c757d;        
+    font-size: 16px;
+    font-style: normal;    /* 去掉之前的斜体设置 (italic)，改为正常 */
+    margin-top: 5px;       /* 增加一点与名字的间距 */
+    font-family: "Open Sans", sans-serif;
+}
+
+/* .speaker-name {
     font-weight: 700;
     font-size: 20px;
     margin-bottom: 5px;
@@ -228,7 +249,7 @@ section {
     font-size: 15px;
     color: #6c757d;
     font-style: italic;
-}
+} */
 
 
 /* --- Schedule Section Custom Styling --- */
