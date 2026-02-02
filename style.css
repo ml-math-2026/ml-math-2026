@@ -114,6 +114,10 @@ section {
     background-color: #f6f9ff;
 }
 
+.section-bg-orange {
+    background-color: #fff9f5; 
+}
+
 .section-title {
     text-align: center;
     padding-bottom: 40px;
@@ -133,11 +137,19 @@ section {
 }
 
 .section-title p {
+    color: #444444;        /* 深灰色文字 (接近黑色) */
+    background-color: transparent; /* 移除任何背景色 */
+    padding: 0;
+    display: block;
+    font-weight: 700;
+}
+
+/* .section-title p {
     margin: 15px 0 0 0;
     font-size: 32px;
     font-weight: 700;
     color: #012970;
-}
+} */
 
 #about .content p, 
 #about .content ul li {
