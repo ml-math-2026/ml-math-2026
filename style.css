@@ -137,19 +137,17 @@ section {
 }
 
 .section-title p {
-    color: #444444;        /* 深灰色文字 (接近黑色) */
-    background-color: transparent; /* 移除任何背景色 */
-    padding: 0;
-    display: block;
-    font-weight: 700;
+    margin: 15px 0 15px 0; /* 稍微增加一点下边距，防止跟内容太挤 */
+    
+    /* 核心修改：调大字体 */
+    font-size: 42px;       /* 从 32px 增大到 42px */
+    
+    font-weight: 700;      /* 保持加粗 */
+    color: #444444;        /* 保持深灰色/黑色 */
+    display: block;        /* 确保独占一行 */
+    font-family: "Open Sans", sans-serif; /* 确保字体风格一致 */
 }
 
-/* .section-title p {
-    margin: 15px 0 0 0;
-    font-size: 32px;
-    font-weight: 700;
-    color: #012970;
-} */
 
 #about .content p, 
 #about .content ul li {
