@@ -139,16 +139,29 @@ section {
     color: #012970;
 }
 
+#about .content p.lead {
+    font-size: 15px; /* 原本 Bootstrap 的 lead 类比较大，这里强制改小 */
+    line-height: 1.6;
+}
+
+/* 列表样式调整 */
 .about-list {
     margin-top: 20px;
-    padding-left: 20px; /* Indent the list */
-    list-style-type: disc; /* Ensure standard black dots */
+    padding-left: 20px; /* 保持左侧缩进 */
 }
 
 .about-list li {
-    margin-bottom: 10px; /* Space between list items */
-    font-size: 16px;
-    color: #444444; /* Match the general text color */
+    font-size: 15px; /* 列表文字也调小，与正文一致 */
+    margin-bottom: 10px;
+    padding-left: 10px; /* 文字与圆点之间的距离 */
+    color: #444444;
+}
+
+/* 专门控制圆点 (Bullet points) 的样式 */
+.about-list li::marker {
+    font-size: 30px; /* 调大圆点：根据需要调整这个数值 */
+    color: black;    /* 确保是黑色 */
+    line-height: 1;  /* 防止大圆点撑开行高 */
 }
 
 /* Speaker Cards */
