@@ -144,8 +144,8 @@ section {
     font-family: "Open Sans", sans-serif; /* 确保使用 Open Sans 字体 */
     font-size: 16px;       /* 调整为 16px，比之前的 15px 稍大，符合图片大小 */
     font-weight: 400;      /* 设置为标准粗细 (Normal)，去除 lead 类的细体效果 */
-    color: #555555;        /* 图片中的深灰色文字 */
-    line-height: 1.4;      /* 增加行高，让文字排版更像图片那样舒朗 */
+    color: #555555;        /* 深灰色文字 */
+    line-height: 1.4;      /* 行间距 */
 }
 
 /* 列表容器样式 */
@@ -156,13 +156,13 @@ section {
 
 /* 列表项具体样式 */
 .about-list li {
-    margin-bottom: 8px;   /* 列表项之间的间距 */
-    padding-left: 1px;     /* 文字稍微远离圆点 */
+    margin-bottom: 6px;   /* 列表项之间的间距 */
+    padding-left: 0px;     /* 文字和圆点距离 */
 }
 
 /* 专门控制圆点的大小 */
 .about-list li::marker {
-    font-size: 32px;       /* 圆点大小，根据需要可微调 */
+    font-size: 36px;       /* 圆点大小 */
     color: #555555;        /* 圆点颜色与文字一致 */
     line-height: 0.1;
 }
