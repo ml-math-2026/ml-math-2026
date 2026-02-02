@@ -251,7 +251,7 @@
                                 Kun Yuan
                             </a>
                         </div>
-                        <div class="speaker-affil">University of Tokyo</div>
+                        <div class="speaker-affil">Peking University</div>
                     </div>
                 </div>
             </div>
@@ -369,9 +369,7 @@
                 sections.forEach(section => {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
-                
-                    // 150 是偏移量，用于补偿顶部固定导航栏的高度
-                    // 当滚动到距离该区域顶部 150px 时，就激活该区域
+
                     if (window.scrollY >= (sectionTop - 150)) {
                         current = section.getAttribute('id');
                     }
