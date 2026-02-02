@@ -238,18 +238,6 @@ section {
     font-family: "Open Sans", sans-serif;
 }
 
-/* .speaker-name {
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #012970;
-}
-
-.speaker-affil {
-    font-size: 15px;
-    color: #6c757d;
-    font-style: italic;
-} */
 
 
 /* --- Schedule Section Custom Styling --- */
@@ -338,6 +326,70 @@ section {
     font-weight: 700;
 }
 
+
+.location-card {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* 轻微阴影，增加立体感 */
+    border-top: 4px solid #e65c00; /* 核心特征：顶部的橙色粗线 */
+    margin-top: 20px;
+}
+
+/* 2. 左侧图标样式 */
+.location-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    background-color: #e65c00; /* 橙色圆底 */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.location-icon-wrapper i {
+    color: #fff;   /* 图标白色 */
+    font-size: 24px;
+}
+
+/* 3. 地点名称样式 */
+.location-details h3 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.location-details h3 a {
+    color: #e65c00; /* 链接改为橙色 */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.location-details h3 a:hover {
+    color: #d35400;
+}
+
+/* 4. 地址文字样式 */
+.address-text {
+    color: #888888; /* 浅灰色文字 */
+    font-size: 15px;
+    line-height: 1.6;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* 5. 地图样式 */
+.location-map {
+    width: 100%;
+    height: 350px; /* 设置地图高度 */
+    border: 0;
+    display: block; /* 消除底部间隙 */
+}
+
+/* 响应式调整：手机端地图高度 */
+@media (max-width: 991px) {
+    .location-map {
+        height: 300px;
+    }
+}
 
 
 /* Footer */
