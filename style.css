@@ -139,6 +139,18 @@ section {
     color: #012970;
 }
 
+.about-list {
+    margin-top: 20px;
+    padding-left: 20px; /* Indent the list */
+    list-style-type: disc; /* Ensure standard black dots */
+}
+
+.about-list li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 16px;
+    color: #444444; /* Match the general text color */
+}
+
 /* Speaker Cards */
 .speaker-card {
     text-align: center;
