@@ -220,17 +220,94 @@ section {
     font-style: italic;
 }
 
-/* Schedule Table */
-.schedule-table thead th {
-    background-color: #012970;
-    color: #fff;
-    border-color: #012970;
+
+/* --- Schedule Section Custom Styling --- */
+
+/* 1. 选项卡 (Tabs) 样式重写 */
+.custom-tabs {
+    border-bottom: 1px solid #dee2e6; /* 底部灰线 */
+    margin-bottom: 0;
 }
 
-.schedule-table td, .schedule-table th {
-    vertical-align: middle;
-    padding: 15px;
+.custom-tabs .nav-link {
+    border: none;             /* 去除默认边框 */
+    border-bottom: 1px solid transparent; 
+    color: #e65c00;           /* 未选中状态：橙色文字 (图片风格) */
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 25px;
+    background: transparent;  /* 确保背景透明 */
 }
+
+.custom-tabs .nav-link:hover {
+    border-color: transparent;
+    color: #d35400;           /* hover 时稍微变深 */
+}
+
+.custom-tabs .nav-link.active {
+    background-color: #fff;   /* 选中状态：白色背景 */
+    color: #444444;           /* 选中状态：深色文字 */
+    border: 1px solid #dee2e6; /* 恢复边框 */
+    border-bottom-color: #fff; /* 遮住底部的线，制造“连通”感 */
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* 2. 日程列表 (Schedule List) 样式 */
+.schedule-list {
+    border-top: none; 
+}
+
+.schedule-row {
+    display: flex;            /* 使用 Flex 布局让时间和事件并排 */
+    padding: 15px 20px;       /* 行内边距 */
+    align-items: flex-start;  /* 顶部对齐 */
+    border-bottom: 1px solid #f0f0f0; /* 极淡的分隔线 */
+}
+
+/* 斑马纹效果：偶数行灰色背景 (图片风格) */
+.schedule-row:nth-child(even) {
+    background-color: #f6f6f6; /* 浅灰色背景 */
+}
+.schedule-row:nth-child(odd) {
+    background-color: #ffffff; /* 白色背景 */
+}
+
+/* 时间列 */
+.schedule-row .time {
+    width: 150px;             /* 固定宽度 */
+    flex-shrink: 0;           /* 防止被压缩 */
+    font-weight: 500;
+    color: #333;
+}
+
+/* 事件列 */
+.schedule-row .event {
+    flex-grow: 1;             /* 占满剩余空间 */
+    color: #555;
+}
+
+/* 3. Locations 区域样式 */
+.locations-area h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.locations-area .loc-item {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.locations-area strong {
+    color: #333;
+    font-weight: 700;
+}
+
+
 
 /* Footer */
 #footer {
