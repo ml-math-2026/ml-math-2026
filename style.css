@@ -18,54 +18,57 @@ a:hover {
 #header {
     background: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
+    /* 修改：减小了上下的 padding，使导航栏更扁平 */
+    padding: 8px 0; 
     transition: all 0.5s;
     z-index: 997;
 }
 
-/* Navbar Brand style removed */
-
 .navbar-nav .nav-link {
-    color: #555555; /* Slightly darker text for links */
+    color: #555555;
     font-weight: 600;
-    margin-left: 10px; /* Adjusted spacing */
+    margin-left: 10px;
     margin-right: 10px;
-    font-size: 16px;
+    /* 修改：减小了字体大小 */
+    font-size: 14px;
     font-family: "Nunito", sans-serif;
     transition: 0.3s;
 }
 
 .navbar-nav .nav-link:hover, 
 .navbar-nav .nav-link.active {
-    color: #e65c00; /* Orange hover color */
+    color: #e65c00;
 }
 
 /* New Orange Registration Button in Nav */
 .btn-nav-register {
-    background-color: #e65c00; /* Target orange color */
-    color: #ffffff !important; /* Force white text */
-    border-radius: 30px; /* Rounded corners */
-    padding: 8px 25px;
+    background-color: #e65c00;
+    color: #ffffff !important;
+    border-radius: 30px;
+    /* 修改：减小了按钮的内边距，使其更紧凑 */
+    padding: 6px 20px;
     font-weight: 600;
+    /* 修改：减小了字体大小，与导航链接保持一致 */
+    font-size: 14px;
     font-family: "Nunito", sans-serif;
     transition: 0.3s;
-    white-space: nowrap; /* Prevent breaking into two lines */
+    white-space: nowrap;
     display: inline-block;
     border: none;
 }
 
 .btn-nav-register:hover {
-    background-color: #cc5200; /* Slightly darker orange on hover */
+    background-color: #cc5200;
     color: #ffffff !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 10px rgba(230, 92, 0, 0.3);
 }
 
-
 /* Hero Section */
 #hero {
     width: 100%;
-    height: 85vh;
+    /* 修改：将高度从 85vh 增加到 95vh，使区域更大 */
+    height: 95vh;
     /* Using a placeholder image for background */
     background: linear-gradient(rgba(1, 4, 136, 0.7), rgba(1, 4, 136, 0.7)), url('https://placehold.co/1920x1080?text=Conference+Venue') center center;
     background-size: cover;
