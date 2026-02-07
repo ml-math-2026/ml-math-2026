@@ -476,10 +476,11 @@ section {
     object-fit: contain;
 }
 
-/* 总宽度设定为 90% 左右。
-   剩余的 10% 空间会被 justify-content-between 自动分配为间隙。
-   这样既保证了高度对齐，又绝对不会溢出屏幕。
-*/
+.logo-final:hover {
+    
+    transform: scale(1.05);
+}
+
 
 /* Logo 1: 宽度占比 34% */
 .logo-1 {
