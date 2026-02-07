@@ -469,3 +469,15 @@ section {
     font-size: 13px;
     color: #012970;
 }
+
+.supporter-logo {
+    max-width: 300px;  /* 限制最大宽度，根据实际图片效果可调 */
+    height: auto;      /* 保持比例 */
+    max-height: 100px; /* 限制最大高度，确保三行不会占太大垂直空间 */
+    
+    /* 可选：给 Logo 加一点点投影，让它在浅色背景上更立体 */
+    /* filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1)); */
+    
+    /* 确保图片在容器中居中 */
+    display: inline-block;
+}
