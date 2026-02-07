@@ -470,52 +470,29 @@ section {
     color: #012970;
 }
 
-/* .supporter-logo {
-    max-width: 300px;  /* 限制最大宽度，根据实际图片效果可调 */
-    height: auto;      /* 保持比例 */
-    max-height: 100px; /* 限制最大高度，确保三行不会占太大垂直空间 */
-    
-    /* 可选：给 Logo 加一点点投影，让它在浅色背景上更立体 */
-    /* filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.1)); */
-    
-    /* 确保图片在容器中居中 */
-    display: inline-block;
-} */
-
-/* --- Supported By Section Styling --- */
-
-.supporter-logo {
-    /* 1. 基础高度：在电脑上显示 50px 高 */
-    height: 30px;
-    
-    /* 2. 宽度自动，保持原始比例 */
-    width: auto;
-    
-    /* 3. 核心防溢出锁：任何时候，单张图片宽度不得超过容器的 32% */
-    /* 3张图 x 32% = 96%，加上间隙正好填满，绝不出框 */
-    max-width: 32%;
-    
-    /* 4. 确保图片缩放时内容完整 */
+.logo-precise {
+    height: auto; 
     object-fit: contain;
-    
-    transition: transform 0.3s;
+    /* 稍微加一点圆角或阴影让图片更融合(可选) */
+    display: block;
 }
 
-.supporter-logo:hover {
-    transform: scale(1.05);
+/* 根据您提供的尺寸 (538x93, 486x104, 498x101) 计算出的宽度百分比。
+   总和约为 94%，预留 6% 的空间做间隙，保证绝不溢出。
+   这也保证了它们在任何屏幕上高度都在同一水平线上。
+*/
+
+/* Logo 1: 宽度占比 35.5% */
+.logo-1 {
+    width: 35.5%;
 }
 
-/* 针对手机/平板的响应式调整 */
-@media (max-width: 768px) {
-    .supporter-logo {
-        /* 屏幕变窄时，为了不触发宽度限制导致图片太小，我们主动降低高度 */
-        height: 35px; 
-    }
+/* Logo 2: 宽度占比 28.5% */
+.logo-2 {
+    width: 28.5%;
 }
 
-@media (max-width: 480px) {
-    .supporter-logo {
-        /* 手机竖屏时更小一点 */
-        height: 28px;
-    }
+/* Logo 3: 宽度占比 30.0% */
+.logo-3 {
+    width: 30.0%;
 }
