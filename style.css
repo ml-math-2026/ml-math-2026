@@ -485,31 +485,29 @@ section {
 /* --- Supported By Section Styling --- */
 
 .supporter-logo {
-    width: auto;           /* 宽度自动，保持比例 */
-    height: auto;          /* 高度自动，由 max-height 控制 */
+    /* 1. 核心：统一高度 */
+    height: 55px;           
     
-    /* 核心防重叠代码 */
-    max-width: 28vw;       /* 限制最大宽度为视口宽度的 28% (留出一点空隙) */
-    /* 在大屏幕上限制最大像素宽度，防止拉得太长 */
-    max-width: 350px;      
+    /* 2. 宽度自动，保持图片比例 */
+    width: auto;            
     
-    object-fit: contain;   /* 确保图片内容完整显示 */
+    /* 3. 安全锁：防止图片过宽导致重叠或换行 */
+    /* 无论如何，一张图不能超过屏幕宽度的 30% (3张就是90%) */
+    max-width: 30vw;       
+    
+    object-fit: contain;    /* 确保图片内容完整显示，不变形 */
     
     transition: transform 0.3s;
 }
 
+/* 鼠标悬停微调 */
 .supporter-logo:hover {
     transform: scale(1.05);
 }
 
-/* 针对手机屏幕的特殊调整：手机上三个并排实在太挤了，允许缩小 */
-@media (max-width: 768px) {
+/* 针对超小屏幕（手机竖屏）的微调 */
+@media (max-width: 576px) {
     .supporter-logo {
-        max-width: 30vw; /* 手机上也强制各占 30%，可能会比较小，但能保住“一行” */
+        height: 35px; /* 手机屏幕太窄了，高度必须减小，否则宽度会打架 */
     }
-}
-
-/* 鼠标放上去轻微放大，增加交互感 */
-.supporter-logo:hover {
-    transform: scale(1.05);
 }
