@@ -67,19 +67,23 @@ a:hover {
 
 #hero {
     width: 100%;
-    height: 100vh; /* 占满全屏高度 */
+    height: 100vh; /* 占满全屏 */
     
-    /* 1. 修改背景图片路径 */
-    /* 注意：如果 style.css 在 css 文件夹里，路径通常需要加 "../" */
+    /* 1. 背景图片设置 */
     background: url("../asset/pku.png") top center;
-    
-    /* 2. 关键修改：让背景随页面一起滚动 */
-    /* 之前可能是 fixed (导致视差效果)，改成 scroll 就还是普通的跟随滚动 */
-    background-attachment: scroll;
-    
-    background-size: cover; /* 保证图片覆盖整个区域 */
+    background-size: cover;
+    background-attachment: scroll; /* 背景随动 */
     position: relative;
     padding: 0;
+
+    /* 2. 核心修复：找回丢失的居中代码 */
+    display: flex;             /* 启用 Flex 布局 */
+    flex-direction: column;    /* 垂直排列 */
+    justify-content: center;   /* 垂直居中 */
+    align-items: center;       /* 水平居中 */
+    
+    /* 3. 确保文字本身也是居中的 */
+    text-align: center;
 }
 
 
