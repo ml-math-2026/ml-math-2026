@@ -83,22 +83,6 @@ a:hover {
 }
 
 
-
-/* #hero {
-    width: 100%;
-    /* 修改：将高度从 85vh 增加到 95vh，使区域更大 */
-    height: 95vh;
-    /* Using a placeholder image for background */
-    background: linear-gradient(rgba(1, 4, 136, 0.7), rgba(1, 4, 136, 0.7)), url('https://placehold.co/1920x1080?text=Conference+Venue') center center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
-
 #hero h1 {
     font-size: 36px;
     font-weight: 700;
