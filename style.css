@@ -485,29 +485,37 @@ section {
 /* --- Supported By Section Styling --- */
 
 .supporter-logo {
-    /* 1. 核心：统一高度 */
-    height: 55px;           
+    /* 1. 基础高度：在电脑上显示 50px 高 */
+    height: 50px;
     
-    /* 2. 宽度自动，保持图片比例 */
-    width: auto;            
+    /* 2. 宽度自动，保持原始比例 */
+    width: auto;
     
-    /* 3. 安全锁：防止图片过宽导致重叠或换行 */
-    /* 无论如何，一张图不能超过屏幕宽度的 30% (3张就是90%) */
-    max-width: 30vw;       
+    /* 3. 核心防溢出锁：任何时候，单张图片宽度不得超过容器的 32% */
+    /* 3张图 x 32% = 96%，加上间隙正好填满，绝不出框 */
+    max-width: 32%;
     
-    object-fit: contain;    /* 确保图片内容完整显示，不变形 */
+    /* 4. 确保图片缩放时内容完整 */
+    object-fit: contain;
     
     transition: transform 0.3s;
 }
 
-/* 鼠标悬停微调 */
 .supporter-logo:hover {
     transform: scale(1.05);
 }
 
-/* 针对超小屏幕（手机竖屏）的微调 */
-@media (max-width: 576px) {
+/* 针对手机/平板的响应式调整 */
+@media (max-width: 768px) {
     .supporter-logo {
-        height: 35px; /* 手机屏幕太窄了，高度必须减小，否则宽度会打架 */
+        /* 屏幕变窄时，为了不触发宽度限制导致图片太小，我们主动降低高度 */
+        height: 35px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .supporter-logo {
+        /* 手机竖屏时更小一点 */
+        height: 28px;
     }
 }
