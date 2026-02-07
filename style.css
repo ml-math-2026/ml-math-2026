@@ -486,7 +486,7 @@ section {
 
 .supporter-logo {
     /* 1. 基础高度：在电脑上显示 50px 高 */
-    height: 50px;
+    height: 30px;
     
     /* 2. 宽度自动，保持原始比例 */
     width: auto;
