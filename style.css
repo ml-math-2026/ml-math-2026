@@ -87,30 +87,62 @@ a:hover {
 }
 
 
-#hero h1 {
+/* #hero h1 {
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 15px; /* 稍微减小底部间距 */
+    margin-bottom: 15px; 
     line-height: 1.2;
 }
 
-/* 新增：描述小字的样式 */
+
 .hero-subtitle {
-    font-size: 18px;       /* 设置小字的字体大小 */
-    font-weight: 400;      /* 字重正常 */
-    color: #e0e0e0;        /* 颜色设置为浅灰色，比白色稍暗 */
-    margin-bottom: 30px;   /* 与下方日期保持间距 */
-    max-width: 800px;      /* 限制最大宽度，防止太长 */
-    margin-left: auto;     /* 居中显示 */
-    margin-right: auto;    /* 居中显示 */
+    font-size: 18px;     
+    font-weight: 400;    
+    color: #e0e0e0;       
+    margin-bottom: 30px;   
+    max-width: 800px;     
+    margin-left: auto;    
+    margin-right: auto;   
 }
 
 
 #hero h2 {
-    font-size: 20px;       /* 原来是 20px，现在增大到 32px */
-    font-weight: 600;      /* 稍微加粗一点 */
-    margin-bottom: 15px;   /* 调整间距 */
-    color: #fff;           /* 确保是纯白色 */
+    font-size: 20px;       
+    font-weight: 600;     
+    margin-bottom: 15px;   
+    color: #fff;           
+} */
+
+
+
+#hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: #fff; /* 确保标题也是白色 */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); /* 添加阴影增强辨识度 */
+}
+
+/* 修改：增强副标题的可见度 */
+.hero-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;        /* 改为纯白 */
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+}
+
+/* 修改：增强日期和地点的可见度 */
+#hero h2 {
+    font-size: 24px;       /* 稍微调大一点点 */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;        /* 确保是纯白色 */
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); /* 添加阴影 */
 }
 
 /* Old btn-get-started removed, using btn-nav-register style instead */
